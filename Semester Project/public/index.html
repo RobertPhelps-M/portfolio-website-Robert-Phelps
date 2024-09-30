@@ -5,13 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Robert Phelps Personal Professional</title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but "Robert Phelps Personal Professional" doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+
+    <div class="banner"></div> <!-- For every page -->
+
+    <nav>
+      <ul>
+        <li><a href="#frontpage">Front Page</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content-container">
+      <div class="text-box">
+        <h2>Example Header</h2>
+        <p>Example text</p>
+      </div>
+
+      <div class="image-box">
+        <img src="Professional_Picture.jpg" alt="Robert Phelps">
+      </div>
+    </div>
+
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <style>
+    body {
+      text-align: center;
+      background-color: #e8f5e9;
+    }
+    .banner {
+        background-image: url('Banner_Image.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        height: 200px;
+        width: 100%;
+      }
+    nav {
+        background-color: #4CAF50;
+        overflow: hidden;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+      nav ul li {
+        float: left;
+      }
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      nav ul li a:hover {
+        background-color: #388E3C;
+      }
+      nav::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .content-container {
+        display: flex; 
+        justify-content: space-between;
+        margin: 20px;
+      }
+      .text-box {
+        flex: 1;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-right: 20px;
+      }
+      .image-box {
+        flex: 0 0 40%;
+        max-width: 100%;
+      }
+      .image-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+  </style>
 </html>
