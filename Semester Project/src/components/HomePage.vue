@@ -1,7 +1,5 @@
 <template>
   <div>
-    <div class="banner"></div>
-
     <div class="content-container">
       <div class="text-box">
         <h2>About Me</h2>
@@ -34,13 +32,6 @@ p {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-}
-.banner {
-  background-image: url('Banner_Image.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-  height: 200px;
-  width: 100%;
 }
 nav {
   background-color: #4CAF50;

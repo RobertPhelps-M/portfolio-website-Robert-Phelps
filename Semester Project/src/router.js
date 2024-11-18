@@ -4,7 +4,7 @@ import PortfolioPage from './components/PortfolioPage.vue';
 
 const routes = [
     { path: '/', name: 'Home', component: HomePage },
-    { path: '/portfolio', name: 'Portfolio', component: PortfolioPage },
+    { path: '/portfoliopage', name: 'Portfolio', component: PortfolioPage },
   ];
 
 const router = createRouter({
