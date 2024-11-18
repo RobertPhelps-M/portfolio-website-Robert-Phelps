@@ -1,15 +1,6 @@
 <template>
   <div>
-    <div class="banner"></div> <!-- For every page -->
-
-    <nav>
-      <ul>
-        <li><router-link to="HomePage" class="nav-link">Home Page</router-link></li>
-        <li><a href="#about">About</a></li>
-        <li><router-link to="PortfolioPage" class="nav-link">Portfolio</router-link></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="banner"></div>
 
     <div class="content-container">
       <div class="text-box">
